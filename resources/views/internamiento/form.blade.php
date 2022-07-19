@@ -66,5 +66,5 @@
 </div>
 <br>
 
-    <a href="{{ route('internamiento.index')}}" class="btn btn-primary">Regresar</a>
+    <a href="{{ route('internamiento.index')}}" class="btn btn-primary">Mostrar Registros</a>
 </div>

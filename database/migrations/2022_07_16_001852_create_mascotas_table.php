@@ -34,7 +34,6 @@ class CreateMascotasTable extends Migration
                     ->constrained('razas')
                     ->nullOnDelete()
                     ->cascadeOnUpdate();
-            $table->timestamps();  
         });
     }
 

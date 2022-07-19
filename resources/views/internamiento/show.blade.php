@@ -20,7 +20,7 @@
                     @endif
     </div>
     <div class="d-flex flex-column">
-        <div class="p-2"><label>Raza:</label> {{$datos->mascotas->razas->Nombre}}</div>
+        <div class="p-2"><label>Raza:</label> {{$datos->mascotas->razas->Nombre ?? 'No hay raza por favor añadir'}}</div>
         <div class="p-2"><label>Tamaño:</label> {{$datos->mascotas->Tamaño}}</div>
         <div class="p-2"><label>Foto:</label><img src="{{asset('storage/'.$datos->mascotas->Foto)}}" alt="{{$datos->mascotas->Nombre}}" class="img-thumbnail" width="100px"></div>
         <div class="p-2"><label>Alergia:</label>{{$datos->mascotas->Alergia}}</div>
@@ -30,7 +30,7 @@
 <h3>DATOS DEL PROPIETARIO</h3>
 <div class="d-flex justify-content-around">
     <div class="d-flex flex-column">
-        <div class="p-2"><label>Nombre:</label> {{$datos->mascotas->propietarios->Nombre}}</div>
+        <div class="p-2"><label>Nombre:</label> {{$datos->mascotas->propietarios->Nombre ?? 'No hay propietario'}}</div>
         <div class="p-2"><label>Apellido Paterno:</label> {{$datos->mascotas->propietarios->ApellidoPaterno}}</div>
         <div class="p-2"><label>Apellido Materno:</label> {{$datos->mascotas->propietarios->ApellidoMaterno}}</div>
         <div class="p-2"><label>Dirección:</label> {{$datos->mascotas->propietarios->Direccion}}</div>
@@ -58,7 +58,7 @@
     </div>
 </div>
 
-    <a href="{{route('internamiento.index')}}" class="btn btn-primary">Regresar</a>
+    <a href="{{route('internamiento.index')}}" class="btn btn-primary">Mostrar Registros</a>
 
 </div>
 @endsection

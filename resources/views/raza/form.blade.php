@@ -20,4 +20,4 @@
     <input type="submit" class="btn btn-success" value="{{$modo}}">
 </div>
 <br>
-<a href="{{ route('raza.index')}}" class="btn btn-primary">Regresar</a>
+<a href="{{ route('raza.index')}}" class="btn btn-primary">Mostrar Razas</a>

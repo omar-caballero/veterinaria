@@ -85,5 +85,5 @@
 </div>
 <br>
 
-    <a href="{{ route('mascota.index')}}" class="btn btn-primary">Regresar</a>
+    <a href="{{ route('mascota.index')}}" class="btn btn-primary">Mostrar mascotas</a>
 </div>

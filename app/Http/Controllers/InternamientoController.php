@@ -159,7 +159,8 @@ class InternamientoController extends Controller
     }
 
     public function exportar(){
-        return Excel::download(new InternamientoExport, 'internamiento.xlsx');
+        //if 
+        //return Excel::download(new InternamientoExport, 'internamiento.xlsx');
     }
 
 }

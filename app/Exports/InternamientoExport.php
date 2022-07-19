@@ -19,6 +19,7 @@ class InternamientoExport implements FromCollection
         ->join('propietarios', 'mascotas.id_propietario', '=', 'propietarios.id')
         ->select('mascotas.Nombre','mascotas.Sexo','internamientos.*','razas.Nombre as raza','propietarios.Nombre as propietario','propietarios.ApellidoPaterno as apellidopaterno')
         ->get();
+
         return $internamientos;
     }
 }

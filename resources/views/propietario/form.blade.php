@@ -71,4 +71,4 @@
     <input type="submit" class="btn btn-success" value="{{$modo}}">
 </div>
 <br>
-<a href="{{ route('propietario.index')}}" class="btn btn-primary">Regresar</a>
+<a href="{{ route('propietario.index')}}" class="btn btn-primary">Mostrar Propietarios</a>

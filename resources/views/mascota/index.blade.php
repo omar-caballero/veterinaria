@@ -56,8 +56,9 @@
                 <img src="{{ asset('storage').'/'.$mascota->Foto}}" width="100">
             </td>
             <td>{{$mascota->Alergia}}</td>
-            <td>{{$mascota->razas->Nombre}}</td>
-            <td>{{$mascota->propietarios->Nombre}}</td>
+            <td>{{$mascota->razas->Nombre ?? 'no hay raza'}}</td>
+            <td>{{$mascota->propietarios->Nombre ?? 'no hay propietario'}}</td>
+            
             <td>
                 <a href="{{route('mascota.edit',$mascota->id)}}" class="btn btn-warning">Editar</a>
                 <form action="{{ route('mascota.destroy', $mascota->id)}}" method="post" style="display: inline">

@@ -32,10 +32,6 @@ Route::resource('/internamiento', InternamientoController::class)->middleware('a
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', function(){return view('welcome');});
 
 Route::get('/exportar', [InternamientoController::class,'exportar'])->name('exportar')->middleware('auth');
-
-Route::group(['middleware' => 'auth'], function () {
-    Route::get('/', [PropietarioController::class,'index'])->name('home');
-});
