@@ -7,6 +7,7 @@ use App\Models\Mascota;
 use Illuminate\Http\Request;
 use App\Exports\InternamientoExport;
 use Illuminate\Support\Facades\DB;
+use Maatwebsite\Excel\Concerns\WithHeadings;
 use Maatwebsite\Excel\Facades\Excel;
 
 
@@ -159,8 +160,7 @@ class InternamientoController extends Controller
     }
 
     public function exportar(){
-        //if 
-        //return Excel::download(new InternamientoExport, 'internamiento.xlsx');
+        return Excel::download(new InternamientoExport, 'internamiento.xlsx');
     }
 
 }

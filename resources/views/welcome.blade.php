@@ -43,7 +43,7 @@
                 </div>
                 <div class="justify-center pt-8 sm:pt-0">
                     <h3 class="text-2xl font-extrabold text-gray-900 dark:text-gray-100">
-                        Instrucciones basicas: Para registrar una mascota, debe ingresar propietario , mascota y por ultimo en registro se podran añadir internamientos.
+                        Instrucciones basicas: Para registrar una mascota, debe ingresar propietario ,raza , mascota y por ultimo en registro se podran añadir internamientos.
                                                Una vez registrada la raza se podra usar como un select de igual manera un propietario puede tener varias mascotas 
                                                con una mascota se podran realizar varios registros de internamiento 
                     </h3>

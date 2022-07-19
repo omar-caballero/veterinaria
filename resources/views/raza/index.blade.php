@@ -40,7 +40,7 @@
                 <form action="{{ route('raza.destroy', $raza->id)}}" method="post" style="display: inline">
                     @csrf
                     @method('DELETE')
-                    <button class="btn btn-danger" onclick="return confirm('¿Quieres Borrar?')" type="submit">Eliminar</button>
+                    <button class="btn btn-danger" onclick="return confirm('¿Quieres Borrar? se eliminaran todas las mascotas con este tipo de raza')" type="submit">Eliminar</button>
                 </form>
         </tr>
         @endforeach

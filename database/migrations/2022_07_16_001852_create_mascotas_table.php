@@ -32,7 +32,7 @@ class CreateMascotasTable extends Migration
             $table->foreignId('id_raza')
                     ->nullable()
                     ->constrained('razas')
-                    ->nullOnDelete()
+                    ->cascadeOnDelete()
                     ->cascadeOnUpdate();
         });
     }

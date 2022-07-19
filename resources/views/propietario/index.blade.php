@@ -56,7 +56,7 @@
                 <form action="{{ route('propietario.destroy', $propietario->id)}}" method="post" style="display: inline">
                     @csrf
                     @method('DELETE')
-                    <button class="btn btn-danger" onclick="return confirm('¿Quieres Borrar?')" type="submit">Eliminar</button>
+                    <button class="btn btn-danger" onclick="return confirm('¿Quieres Borrar? Se eliminaran todas las mascotas con este propietario')" type="submit">Eliminar</button>
                 </form>
             </td>
             @endforeach
